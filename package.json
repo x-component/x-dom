@@ -1,0 +1,28 @@
+{
+	"name"    : "x-dom",
+	"version" : "0.0.0",
+	"license" : "MIT",
+	"dependencies":{
+		"domino" : "git://github.com/fgnass/domino.git#53205b15ef",
+		"x-log"  : "~0.0"
+	},
+	"description": "convert a HTML string or file to a serverside DOM tree. Uses domino",
+	"keywords": [
+    "x-x",
+    "x-component",
+    "dom"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/x-component/x-dom.git"
+  },
+	"devDependencies":{
+		"vows"    : "~0.7",
+		"dox-basic": "~0.0"
+	},
+	"main" : "dom.js",
+	"scripts": {
+         "prepublish": "cat ./dom.js | node ./node_modules/dox-basic/bin/dox-basic -m -t \"[![Build Status](https://travis-ci.org/x-component/$npm_package_name.png?v$npm_package_version)](https://travis-ci.org/x-component/$npm_package_name)\" > README.md",
+		"test"       : "vows ./test/*.test.js"
+	}
+}
