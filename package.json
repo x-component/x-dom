@@ -1,6 +1,6 @@
 {
   "name": "x-dom",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
     "domino": "git://github.com/fgnass/domino.git#53205b15ef",
