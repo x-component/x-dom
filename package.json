@@ -1,6 +1,6 @@
 {
   "name": "x-dom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "dependencies": {
     "domino": "git://github.com/fgnass/domino.git#53205b15ef",
@@ -16,14 +16,14 @@
     "type": "git",
     "url": "https://github.com/x-component/x-dom.git"
   },
-  "devDependencies":{
-    "x-common" : "1.x.x",
+  "devDependencies": {
+    "x-common": "1.x.x",
     "x-publish": "1.x.x",
-    "vows"     : "latest"
+    "vows": "latest"
   },
   "main": "dom.js",
   "scripts": {
-    "prepublish" : "./node_modules/x-publish/scripts/prepublish.sh",
-    "test"       : "vows ./test/*.test.js"
+    "prepublish": "./node_modules/x-publish/scripts/prepublish.sh",
+    "test": "vows ./test/*.test.js"
   }
 }
